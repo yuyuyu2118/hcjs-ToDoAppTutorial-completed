@@ -6,6 +6,7 @@ $BodyHeight: 200px;
     padding: 8px;
     margin: 8px;
     border-radius: 8px;
+    text-align: center;
 }
 
 @mixin buttons{
@@ -16,6 +17,9 @@ $BodyHeight: 200px;
 
 body{
     font-family: sans-serif;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
 }
 
 input{
@@ -32,6 +36,10 @@ button{
     }
 }
 
+li{
+    margin-right: 16px;
+}
+
 .input-area{
     background-color: rgb(189, 255, 255);
     width: $BasicWidth;
@@ -39,16 +47,28 @@ button{
     @include box;
 }
 
-.imcomplete-area{
+.incomplete-area{
     background-color: rgb(200, 255, 237);
     width: $BasicWidth;
     height: $BodyHeight;
     @include box;
 }
 
-.complate-area{
+.complete-area{
     background-color: rgb(234, 255, 204);
     width: $BasicWidth;
     height: $BodyHeight;
     @include box;
+}
+
+.title{
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+}
+.list-row{
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
 }
