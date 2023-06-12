@@ -1,0 +1,53 @@
+/*# sourceMappingURL=index.css.map */
+body {
+  font-family: sans-serif;
+}
+
+input {
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  outline: none;
+}
+
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+}
+button:hover {
+  background-color: pink;
+  color: white;
+  cursor: pointer;
+}
+
+.input-area {
+  background-color: rgb(189, 255, 255);
+  width: 400px;
+  height: 30px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.imcomplete-area {
+  background-color: rgb(200, 255, 237);
+  width: 400px;
+  height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complate-area {
+  background-color: rgb(234, 255, 204);
+  width: 400px;
+  height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.title{
+  text-align: center;
+}

@@ -1,0 +1,54 @@
+$BasicWidth: 400px;
+$HeaderHeight: 30px;
+$BodyHeight: 200px;
+
+@mixin box {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+@mixin buttons{
+    border-radius: 16px;
+    border: none;
+    padding: 6px 16px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+input{
+    @include buttons;
+    outline: none;
+}
+
+button{
+    @include buttons;
+    &:hover{
+        background-color: pink;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.input-area{
+    background-color: rgb(189, 255, 255);
+    width: $BasicWidth;
+    height: $HeaderHeight;
+    @include box;
+}
+
+.imcomplete-area{
+    background-color: rgb(200, 255, 237);
+    width: $BasicWidth;
+    height: $BodyHeight;
+    @include box;
+}
+
+.complate-area{
+    background-color: rgb(234, 255, 204);
+    width: $BasicWidth;
+    height: $BodyHeight;
+    @include box;
+}
